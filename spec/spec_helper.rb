@@ -11,6 +11,7 @@ require 'capybara/rspec'
 require 'rspec'
 require 'pg'
 require_relative './setup_test_database'
+require 'database_helpers'
 
 # Tell Capybara to talk to BookmarkManager
 Capybara.app = BookmarkManager
@@ -32,3 +33,5 @@ RSpec.configure do |config|
     setup_test_database
   end
 end
+
+
